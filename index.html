@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game On</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+    <!--The start button-->
+    <div class="start_btn"><button>Begin at Your Own Risk</button></div>
+
+    <!--Information box-->
+    <div class="info_box">
+        <div class="info-title"><span>Establishments</span></div>
+        <div class="info-list">
+            <div class="info">1. You will only have <span>15 seconds</span>per question</div>
+            <div class="info">2. Warning. You will doubt yourself throughout the quiz.</div>
+            <div class="info">3. There is no going back so choose wisely.</div>
+            <div class="info">4. You cannot exit the game.</div>
+        </div>
+        <div class="buttons"></div>
+        <button class="done">Terminate</button>
+        <button class="move forward">Proceed</button>
+    </div>
+
+    <!--Quiz box-->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Begin at Your Own Risk</div>
+            <div class="timer">
+                <div class="time_left_txt">Tik Tok</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!--Questions will be added in javascript-->
+            </div>
+            <div class="option_list">
+                <!--Options will be added in javascript-->
+            </div>
+        </section>
+        <!--Creating a footer for Quiz-->
+        <footer>
+            <div class="total_que">
+                <!--Nothing is added in div as it will be added in javascript-->
+            </div>
+            <button class="next_btn">Proceed</button>
+        </footer>
+    </div>
+
+    <!--Result box-->
+    <div class="result_box">
+        <div class="result_box">
+            <div class="icon">
+                <i class="fas fa-crown"></i>
+            </div>
+        <div class="complete_text">You Made it</div>
+        <div class="score_text">
+            <!--Result pop up will be added in javascript-->
+        </div>
+        <div class="buttons">
+            <button class="restart">Reengage</button>
+            <button class="quit">Terminate</button>
+        </div>
+    </div>
+
+    
+</body>
+</html>
