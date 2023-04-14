@@ -5,25 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game On</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-<body>    
-    <!--The start button-->
-    <div class="start_btn"><button>Begin at Your Own Risk</button></div>
+<body> 
 
-    <!--Information box-->
-    <div class="info_box">
-        <div class="info-title"><span>Establishments</span></div>
-        <div class="info-list">
-            <div class="info">1. You will only have <span>15 seconds</span>per question</div>
-            <div class="info">2. Warning. You will doubt yourself throughout the quiz.</div>
-            <div class="info">3. There is no going back so choose wisely.</div>
-            <div class="info">4. You cannot exit the game.</div>
+    <!--Header will consist of both the time and high score-->
+    <header>
+        <h4 id="view-high-scores">View High Score</h4>
+        <h4 class="timer">Time: <span id="timer"></span></h4>
+    </header>
+
+    <!--Created a pop up with information about time and deductions. Also added a start
+    btn within a div-->
+    <div id="starter-container" class="show">
+        <div class="container start">
+            <h1>Game On</h1>
+            <p>You will have approximately 15 seconds to answer the questions. If the answer
+                is incorrect 2 points will be deducted and 3 seconds will be penalized. 
+            </p>
+            <button class="btn startend" id="start-game">Start Quiz</button>
         </div>
-        <div class="buttons"></div>
-        <button class="done">Terminate</button>
-        <button class="move forward">Proceed</button>
     </div>
+
+
 
     <!--Quiz box-->
     <div class="quiz_box">
