@@ -29,7 +29,26 @@ var QueationIndex = 0;
 var questions = [
     {
         q: 'How many times a year does the sun set and rise in the Arctic?',
-        a: 'Once',
-        choices: [{}]
-    }
+        a: 'One time',
+        choices: [{choice: '1. two times'}, {choice: '2. one time'}, {choice: '3. four times'}, {
+         choice: '4. three times'}]
+    },
+    {
+        q: 'What day of the week is the least  amount of babies are born?',
+        a: 'Sunday',
+        choices: [{choice: '1. Monday'}, {choice: '2. Saturday'}, {choice: '3. Sunday'}, {
+         choice: '4. Tuesday'}]
+    },
+    {
+        q: 'How many times a year does the sun set and rise in the Arctic?',
+        a: 'One time',
+        choices: [{choice: '1. two times'}, {choice: '2. one time'}, {choice: '3. four times'}, {
+         choice: '4. three times'}]
+    },
+    {
+        q: 'How many times a year does the sun set and rise in the Arctic?',
+        a: 'One time',
+        choices: [{choice: '1. two times'}, {choice: '2. one time'}, {choice: '3. four times'}, {
+         choice: '4. three times'}]
+    },
 ]
