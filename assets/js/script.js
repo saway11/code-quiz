@@ -73,3 +73,57 @@ var renderStartPage = function () {
         wrongEl.classList.add("hide");
     }
 }
+
+var setTime = function () {
+    timeleft = 30;
+
+    var timercheck = setInterval(function() {
+        timerEl.innerText = timeleft;
+        timeleft--
+
+        if (gameover) {
+            clearInterval(timercheck)
+        }
+
+        if (timeLeft < 0) {
+            showScore()
+            timerEl.innerText = 0
+            clearInterval(timercheck)
+        }
+    }, 1000)
+}
+
+var startGame = function() {
+    containerStartEl.classList.add('hide');
+    containerStartEl.classList.remove('show');
+    containerQuestionEl.classList.remove('hide');
+    containerQuestionEl.classList.add('show');
+
+    arrayShuffledQuestions = questions.sort(() => Math.random() - 0.5)
+    setTime()
+    setQuestion()
+}
+
+var setQuestion = function() {
+    resetAnswers()
+    displayQuestion(arrayShuffledQuestions[QuestionIndex])
+}
+
+var resetAnswers = function() {
+    while (answerbuttonsEl.firstChild) {
+        answerbuttonsEl.removeChild(answerbuttonsEl.firstChild)
+    };
+};
+
+var displayQuestions = function(index) {
+    questionEl.innerText = index.q
+    for (var i = 0; i < index.choices.length; i++) {
+        var answerbutton = document.createElement('button')
+        answerbutton.innerText = index.choices[i].choice
+        answerbutton.classList.add('btn')
+        answerbutton.classList.add('answerbtn')
+        answerbutton.addEventListener("click", answerCheck)
+        answerbuttonsEl.appendChild(answerbutton)
+    }
+};
+
