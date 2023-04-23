@@ -1,6 +1,7 @@
 # Trivia Quiz
 
 # URL
+https://saway11.github.io/code-quiz/
 
 # Description
 This quiz created on the JavaScript fundamentals that stores high scores
@@ -10,7 +11,11 @@ so that the user can guage their progress compared to other users
 The user's initial view of the quiz will consist of reading the instructions, have access to the "view high score", "go back" and "clear high scores" button. As soon as the user activates the "start quiz" button questions and answers will appear. The user will have 30 seconds to answer each question. If the user runs out of time a different screen will appear which will display "complete". The user must enter their initals in order to receive their final score. The user has the ability to go back to the main page. If the user completes the quiz they will receive a final score. The user has the ability to view their high scores or clear their high scores.
 
 # Screenshot
-
+![](./assets/images/Screenshot%20(12).png)
+![](./assets/images/Screenshot%20(13).png)
+![](./assets/images/Screenshot%20(14).png)
+![](./assets/images/Screenshot%20(15).png)
+![](./assets/images/Screenshot%20(16).png)
 
 # Credits
 UC Berkeley Coding Bootcamp, Google, W3 School, ChatGBT
