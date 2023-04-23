@@ -40,15 +40,36 @@ var questions = [
          choice: '4. Tuesday'}]
     },
     {
-        q: 'How many times a year does the sun set and rise in the Arctic?',
-        a: 'One time',
-        choices: [{choice: '1. two times'}, {choice: '2. one time'}, {choice: '3. four times'}, {
-         choice: '4. three times'}]
+        q: 'What is a Golden Birthday?',
+        a: 'Turning the same age as the date of birth',
+        choices: [{choice: '1. turning the same age as the date of birth'}, {choice: '2. 25th Birthday'}, {choice: '3. 30th Birthday'}, {
+         choice: '4. 15 Birthday'}]
     },
     {
-        q: 'How many times a year does the sun set and rise in the Arctic?',
-        a: 'One time',
-        choices: [{choice: '1. two times'}, {choice: '2. one time'}, {choice: '3. four times'}, {
-         choice: '4. three times'}]
+        q: 'How many different varieties of watermelon are there?',
+        a: 'More than 300',
+        choices: [{choice: '1. More than 30'}, {choice: '2. More than 300'}, {choice: '3. More than 100'}, {
+         choice: '4. More than 50'}]
     },
-]
+];
+
+var renderStartPage = function () {
+    containerHighScoresEl.classList.add("hide")
+    containerHighScoresEl.classList.remove("show")
+    containerStartEl.classList.remove("hide")
+    containerStartEl.classList.add("show")
+    containerScoresEl.removeChild(containerScoreEl.lastChild)
+    QuestionIndex = 0
+    gameover = ""
+    timerEl.textContent = 0
+    score = 0
+
+    if (correctEl.className = "show") {
+        correctEl.classList.remove("show");
+        correctEl.classList.add("hide");
+    }
+    if (wrongEl.className = "show") {
+        wrongEl.classList.remove("show");
+        wrongEl.classList.add("hide");
+    }
+}
