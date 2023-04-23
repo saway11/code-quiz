@@ -127,3 +127,42 @@ var displayQuestions = function(index) {
     }
 };
 
+var answerCorrect = function() {
+    if (correctEl.className = "hide") {
+        correctEl.classList.remove("hide")
+        correctEl.classList.add("banner")
+        wrongEl.classList.remove("banner")
+        wrongEl.classList.add("hide")
+        }
+    }  
+
+var answerWrong = function() {
+    if (wrongEl.className = "hide") {
+        wrongEl.classList.remove("hide")
+        wrongEl.classList.add("banner")
+        correctEl.classList.remove("banner")
+        correctEl.classList.add("hide")
+    }
+}
+
+var answerCheck = function(event) {
+    var selectednaswer = event.target
+    if (arrayShuffledQuestions[QuestionIndex].a === selectedanswer.innerText) {
+        answerCorrect()
+        score = score + 7
+    }
+
+    else {
+        answerWrong()
+        score = score -1;
+        timeleft = timeleft - 3;
+    };
+    QuestionIndex++
+    if  (arrayShuffledQuestions.length > QuestionIndex + 1) {
+        setQuestion()
+    }   
+    else {
+       gameover = "true";
+       showScore();
+        }
+}
