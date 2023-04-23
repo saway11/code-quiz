@@ -15,7 +15,7 @@ body {
     padding: 0;
     font-family: 'Lucida Sans';
 }
-
+/* Styling Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -34,6 +34,7 @@ header {
     text-align: right;
     padding-right: 20px;
 }
+/* Main content*/
 .container {
     padding: 20px;
     flex-direction: column;
@@ -91,6 +92,7 @@ p {
 #high-score {
     text-align: left;
 }
+/*Styling for button*/
 .btn {
     background: var(--secondary);
     color: var(--white);
@@ -129,7 +131,7 @@ p {
     text-align: left;
     font-size: 3.0vw;
 }
-
+/* styling for correct and wrong pop up*/
 .banner {
     font-size: 25px;
     text-align: center;
@@ -143,6 +145,7 @@ p {
     text-align: center;
     padding-top: 5px;
 }
+/*List for high scores*/
 ol {
     list-style-type: number;
 }
